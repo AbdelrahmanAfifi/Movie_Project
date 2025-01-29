@@ -1,0 +1,93 @@
+body {
+    background: url(backgound_test.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;  
+    margin: 0;  
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+}
+
+
+.login {
+    width: 400px;
+    padding: 20px 50px;  /* إضافة padding لجعل الصندوق متناسق */
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;  /* إضافة حواف دائرية للصندوق */
+    text-align: center;  /* محاذاة الكتابة إلى المنتصف */
+}
+
+
+.login h1 {
+    margin: 0;
+    padding: 0 0 20px;  
+    color: #fff;
+}
+
+
+.login label {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.login input[type="text"],
+.login input[type="email"],
+.login input[type="password"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;  
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login input[type="submit"],
+.login input[type="button"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+    background: peru;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 55%;  
+    transition: .5s ease;
+}
+
+.login input[type="submit"]:hover,
+.login input[type="button"]:hover {
+    transform: scale(1.1);  
+}
+
+
+.login a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+.or {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+}
