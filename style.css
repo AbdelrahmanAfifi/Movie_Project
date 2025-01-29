@@ -428,3 +428,105 @@
     text-decoration: none;
     color: #e5e216;
 }
+
+/* media queries */
+/* 1. الهواتف المحمولة - شاشات أقل من 768px */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav-center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav-center a {
+        margin: 5px 0;
+    }
+
+    #nav-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-right input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #content {
+        text-align: center;
+        padding: 20px;
+    }
+
+    #center h1 {
+        font-size: 22px;
+    }
+
+    #card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #poster img {
+        width: 100%;
+    }
+
+    #datalist {
+        width: 100%;
+    }
+}
+
+/* 2. الأجهزة اللوحية - شاشات بين 768px و 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #navbar {
+        padding: 10px;
+    }
+
+    #nav-center a {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    #nav-right input {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #center h1 {
+        font-size: 26px;
+    }
+
+    #card {
+        width: 48%;
+        margin: 1%;
+    }
+
+    #poster img {
+        width: 100%;
+    }
+}
+
+/* 3. الشاشات الكبيرة - أكبر من 1024px */
+@media (min-width: 1024px) {
+    #navbar {
+        padding: 15px 50px;
+    }
+
+    #nav-center a {
+        font-size: 18px;
+    }
+
+    #center h1 {
+        font-size: 32px;
+    }
+
+    #card {
+        width: 22%;
+        margin: 1%;
+    }
+}
